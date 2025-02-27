@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Dashboard By Shubham</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Headers -->
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-center p-2 pb-1">Sales Dashboard</h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- Card -->
+    <section class="container-fluid">
+      <div class="row">
+        <!-- card-1 -->
+        <div class="col-lg-2 p-1">
+          <div class="card px-2 p-1 pb-0">
+            <p class="text-center p-1 m-0" style="font-size: 20px">
+              Active Customer
+            </p>
+            <div class="d-flex justify-content-between aling-item-center">
+              <h3 class="text-right" style="font-size: 20px; font-weight: 500">
+                5M
+              </h3>
+              <p class="text-right" style="font-size: 20px; font-weight: 500">
+                <i
+                  class="fa-solid fa-chart-line"
+                  style="color: green; font-size: 25px"
+                ></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-2 -->
+        <div class="col-lg-2 p-1">
+          <div class="card px-2 p-1 pb-0">
+            <p class="text-center p-1 m-0" style="font-size: 20px">
+              Not Active Customer
+            </p>
+            <div class="d-flex justify-content-between">
+              <h3 class="text-right" style="font-size: 20px; font-weight: 500">
+                10k
+              </h3>
+              <p class="text-right" style="font-size: 20px; font-weight: 500">
+                <i
+                  class="fa-solid fa-layer-group"
+                  style="color: rgb(0, 17, 255); font-size: 25px"
+                ></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-3 -->
+        <div class="col-lg-2 p-1">
+          <div class="card px-2 p-1 pb-0">
+            <p class="text-center p-1 m-0" style="font-size: 20px">
+              Total Growth
+            </p>
+            <div class="d-flex justify-content-between">
+              <h3 class="text-right" style="font-size: 20px; font-weight: 500">
+                $181M
+              </h3>
+              <p class="text-right" style="font-size: 20px; font-weight: 500">
+                <i
+                  class="fa-solid fa-user-tie"
+                  style="color: rgb(213, 165, 10); font-size: 25px"
+                ></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-4 -->
+        <div class="col-lg-2 p-1">
+          <div class="card px-2 p-1 pb-0">
+            <p class="text-center p-1 m-0" style="font-size: 20px">
+              Total Revenue
+            </p>
+            <div class="d-flex justify-content-between">
+              <h3 class="text-right" style="font-size: 20px; font-weight: 500">
+                $86M
+              </h3>
+              <p class="text-right" style="font-size: 20px; font-weight: 500">
+                <i
+                  class="fa-solid fa-chart-line"
+                  style="color: green; font-size: 25px"
+                ></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-5 -->
+        <div class="col-lg-2 p-1">
+          <div class="card px-2 p-1 pb-0">
+            <p class="text-center p-1 m-0" style="font-size: 20px">
+              Top Product
+            </p>
+            <div class="d-flex justify-content-between">
+              <h3 class="text-right" style="font-size: 20px; font-weight: 500">
+                Electronics
+              </h3>
+              <p class="text-right" style="font-size: 20px; font-weight: 500">
+                <i
+                  class="fa-solid fa-chart-line"
+                  style="color: green; font-size: 25px"
+                ></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-6 -->
+        <div class="col-lg-2 p-1">
+          <div class="card p-1 pb-0" style="position: relative">
+            <p class="text-center p-1 m-0" style="font-size: 20px">
+              Sales Quantity
+            </p>
+            <div class="d-flex justify-content-between">
+              <h3 class="text-right" style="font-size: 20px; font-weight: 500">
+                $14M
+              </h3>
+              <p class="text-right" style="font-size: 20px; font-weight: 500">
+                <i
+                  class="fa-solid fa-chart-line"
+                  style="color: green; font-size: 25px"
+                ></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Charts -->
+    <main class="container-fluid my-3">
+      <div class="row">
+        <!-- sales -->
+        <div class="col-lg-4 card-1 p-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Week</option>
+              <option value="">Month</option>
+              <option value="">6 Month</option>
+              <option value="">Yearly</option>
+              <option value="">5 Year</option>
+            </select>
+            <div id="sales"></div>
+          </div>
+        </div>
+
+        <!-- Forcasting" -->
+        <div class="col-lg-4 card-1 p-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Week</option>
+              <option value="">Month</option>
+              <option value="">6 Month</option>
+              <option value="">Yearly</option>
+              <option value="">5 Year</option>
+            </select>
+            <div id="forcasting"></div>
+          </div>
+        </div>
+
+        <!-- Growth Vs Return -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="growthVsReturn"></div>
+          </div>
+        </div>
+
+        <!-- Activity Sales Continents Wise -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="activitySalesContinent"></div>
+          </div>
+        </div>
+
+        <!-- Activity Sales Country Wise -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="activitySalesCountry"></div>
+          </div>
+        </div>
+
+        <!-- Activity Sales In India (state) -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="activitySalesIndia"></div>
+          </div>
+        </div>
+
+        <!-- Activity Sales In India (city) -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="activitySalesCity"></div>
+          </div>
+        </div>
+
+        <!-- Sales By Channels -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="salesByChannels"></div>
+          </div>
+        </div>
+
+        <!-- Top 5 Sales Category -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="salesCategory"></div>
+          </div>
+        </div>
+
+        <!-- Top Produts Segment Wise -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="productSegment"></div>
+          </div>
+        </div>
+
+        <!-- Top 5 Buyers -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="buyers"></div>
+          </div>
+        </div>
+
+        <!-- sales By Marketing -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="salesByMarketing"></div>
+          </div>
+        </div>
+
+        <!-- Geological Sales Country Wise -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 10px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="countryMap"></div>
+          </div>
+        </div>
+
+        <!-- Geological Sales India Wise -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 6px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="indiaMap"></div>
+          </div>
+        </div>
+
+        <!-- Geological Sales District Wise -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 10px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="districtMap"></div>
+          </div>
+        </div>
+
+        <!-- Marketing Sales Team Wise -->
+        <div class="col-lg-4 p-1 card-1">
+          <div class="card">
+            <select
+              name=""
+              id=""
+              style="position: absolute; top: 10px; right: 10px; z-index: 99"
+            >
+              <option value="">Year 2023</option>
+              <option value="">Year 2022</option>
+              <option value="">Year 2021</option>
+              <option value="">Year 2020</option>
+              <option value="">Year 2019</option>
+            </select>
+            <div id="marketingSalesTeamWise"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- js files link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
