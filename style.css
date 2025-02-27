@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: #c6c4c4 !important; */
+  background-color: #f7f7f7 !important;
+}
+
+.card {
+  position: relative;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.card-1:hover {
+  border: 2px solid #979696;
+}
+.card-1 {
+  height: 360px;
+  border-radius: 5px;
+}
